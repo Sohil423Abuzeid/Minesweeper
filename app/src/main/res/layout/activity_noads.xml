@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".noads">
+    <TextView
+
+        android:layout_marginRight="170sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="1sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minesweeper"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        android:id="@+id/aaaa"/>
+    <TextView
+        android:id="@+id/bbbb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aaaa"
+        android:layout_marginTop="30sp"
+        android:text="GO Premium"
+        android:textSize="50sp"
+        android:fontFamily="@font/jakartasans"
+        android:textColor="#000"
+
+        />
+    <TextView
+        android:id="@+id/cccc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bbbb"
+        android:text="No ADS   No interruptions!"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/jakartasans"
+        android:textColor="#000"
+
+
+        />
+    <TextView
+        android:id="@+id/dddd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Month"
+        android:textSize="20sp"
+        android:fontFamily="@font/jakartasans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cccc"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="30sp"
+
+        />
+    <TextView
+        android:id="@+id/eeee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        app:layout_constraintStart_toEndOf="@+id/dddd"
+        app:layout_constraintTop_toBottomOf="@+id/dddd"
+        android:layout_marginBottom="20sp"
+        android:text="30.99 EGP"
+        android:textSize="30sp"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"
+        android:background="@drawable/roundbtn"
+
+        android:id="@+id/ffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subscribe"
+        app:layout_constraintTop_toBottomOf="@+id/eeee"
+        android:textSize="30sp"
+        android:layout_marginTop="5sp"
+        android:fontFamily="@font/jakartasans"
+        />
+    <TextView
+        android:id="@+id/gggg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 Month"
+        android:textSize="20sp"
+        android:fontFamily="@font/jakartasans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ffff"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="30sp"
+
+        />
+    <TextView
+        android:layout_marginEnd="30sp"
+        android:id="@+id/hhhh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        app:layout_constraintStart_toEndOf="@+id/dddd"
+        app:layout_constraintTop_toBottomOf="@+id/gggg"
+        android:layout_marginBottom="20sp"
+        android:text="16.99 EGP / M"
+        android:textSize="30sp"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"
+        android:background="@drawable/roundbtn"
+        android:id="@+id/jjjj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subscribe"
+        app:layout_constraintTop_toBottomOf="@+id/hhhh"
+        android:textSize="30sp"
+        android:layout_marginTop="5sp"
+        android:fontFamily="@font/jakartasans"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/roundbtn"
+        android:id="@+id/kkkk"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="Buy Now"
+        android:fontFamily="@font/jakartasans"
+        app:layout_constraintTop_toBottomOf="@+id/jjjj"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100sp"
+        android:textSize="30sp"
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

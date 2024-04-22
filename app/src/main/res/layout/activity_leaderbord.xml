@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".leaderbord">
+    <TextView
+        android:layout_marginRight="170sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minesweeper"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        android:id="@+id/aaaa"/>
+    <TextView
+        android:id="@+id/bbbb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leader Board"
+        android:textSize="40sp"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="40sp"
+        app:layout_constraintTop_toBottomOf="@id/aaaa"
+        />
+    <TextView
+        android:id="@+id/cccc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top 5"
+
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bbbb"
+        android:layout_marginTop="60sp"
+        android:layout_marginStart="160sp"
+        />
+    <TextView
+        android:id="@+id/dddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cccc"
+        android:text="1 . John Smith"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="20sp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:fontFamily="@font/jakartasans"
+
+        />
+    <TextView
+        android:id="@+id/eeee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/dddd"
+        app:layout_constraintEnd_toEndOf="@+id/dddd"
+        app:layout_constraintTop_toBottomOf="@id/dddd"
+        android:text="Score : 500"
+        android:layout_marginStart="40sp"
+
+        android:textSize="16sp"
+        android:fontFamily="@font/jakartasans"
+        android:textColor="#DFBE5B"
+        />
+    <TextView
+        android:id="@+id/ffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eeee"
+        android:text="2.Jane Smith"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="12sp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/jakartasans"
+
+        />
+    <TextView
+        android:id="@+id/gggg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/dddd"
+        app:layout_constraintEnd_toEndOf="@+id/dddd"
+        app:layout_constraintTop_toBottomOf="@id/ffff"
+        android:text="Score : 400"
+        android:layout_marginStart="40sp"
+
+        android:textSize="16sp"
+        android:fontFamily="@font/jakartasans"
+        android:textColor="#DFBE5B"
+        />
+
+    <TextView
+        android:id="@+id/hhhh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gggg"
+        android:text="3 . Robert Johnson"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="12sp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:fontFamily="@font/jakartasans"
+
+        />
+    <TextView
+        android:id="@+id/iiii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/dddd"
+        app:layout_constraintEnd_toEndOf="@+id/dddd"
+        app:layout_constraintTop_toBottomOf="@id/hhhh"
+        android:text="Score : 300"
+        android:layout_marginStart="40sp"
+
+        android:textSize="16sp"
+        android:fontFamily="@font/jakartasans"
+        android:textColor="#DFBE5B"
+        />
+    <TextView
+        android:id="@+id/jjjj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hhhh"
+        android:text="4 . Michel Brown "
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="30sp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:fontFamily="@font/jakartasans"
+
+        />
+    <TextView
+        android:id="@+id/kkkk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/dddd"
+        app:layout_constraintEnd_toEndOf="@+id/dddd"
+        app:layout_constraintTop_toBottomOf="@id/jjjj"
+        android:text="Score : 200"
+        android:layout_marginStart="40sp"
+
+        android:textSize="16sp"
+        android:fontFamily="@font/jakartasans"
+        android:textColor="#DFBE5B"
+        />
+    <TextView
+    android:id="@+id/llll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/kkkk"
+    android:text="5 . Mark Gayp "
+    android:layout_marginStart="15sp"
+    android:layout_marginTop="12sp"
+    android:textColor="#000"
+    android:textSize="20sp"
+    android:fontFamily="@font/jakartasans"
+
+    />
+    <TextView
+        android:id="@+id/mmmm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/dddd"
+        app:layout_constraintEnd_toEndOf="@+id/dddd"
+        app:layout_constraintTop_toBottomOf="@id/llll"
+        android:text="Score : 100"
+        android:layout_marginStart="40sp"
+
+        android:textSize="16sp"
+        android:fontFamily="@font/jakartasans"
+        android:textColor="#DFBE5B"
+        />
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:onClick="homldr"
+
+        android:id="@+id/hom"
+        android:layout_width="72sp"
+        android:layout_height="53sp"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="60sp"
+        android:src="@drawable/homeblack"
+        app:layout_constraintStart_toStartOf="@id/dddd"
+        app:layout_constraintTop_toBottomOf="@id/mmmm"
+
+        />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:onClick="ldrldr"
+        android:id="@+id/ldr"
+        android:layout_width="72sp"
+        android:layout_height="53sp"
+        android:src="@drawable/ldrred"
+        app:layout_constraintTop_toBottomOf="@id/mmmm"
+        android:layout_marginTop="60sp"
+        app:layout_constraintStart_toEndOf="@id/hom"
+       android:layout_marginStart="20sp"
+
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:onClick="setldr"
+        android:layout_width="72sp"
+        android:layout_height="53sp"
+        android:src="@drawable/baseline_settings_24"
+
+
+        app:layout_constraintTop_toBottomOf="@id/mmmm"
+        android:layout_marginTop="60sp"
+        app:layout_constraintStart_toEndOf="@id/ldr"
+        tools:layout_editor_absoluteX="296dp"
+        tools:layout_editor_absoluteY="630dp"
+        android:layout_marginStart="20sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

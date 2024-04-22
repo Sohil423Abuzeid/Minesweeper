@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".statistics">
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/easy"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/roundbtn"
+        android:fontFamily="@font/jakartasans"
+        android:text="Easy"
+        android:textSize="25sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/medium"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundbtn"
+        android:fontFamily="@font/jakartasans"
+        android:text="Medium"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/easy"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hard"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundbtn"
+        android:fontFamily="@font/jakartasans"
+        android:text="Hard"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@id/medium"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+    android:layout_marginStart="5sp"
+    android:id="@+id/games"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    android:text="Games"
+    android:textSize="30sp"
+    app:layout_constraintTop_toBottomOf="@id/hard"
+    android:layout_marginTop="30sp"
+    android:fontFamily="@font/jakartasans"
+    android:textColor="#000"
+    />
+
+    <TextView
+        android:id="@+id/gamesst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/jakartasans"
+        android:text="Games started"
+        android:textColor="#AF933F"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/games" />
+
+    <TextView
+        android:id="@+id/numz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:text="    0   "
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/gamesst"
+        app:layout_constraintTop_toTopOf="@id/gamesst" />
+    <TextView
+        android:id="@+id/gameswon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/jakartasans"
+        android:text="Games Won"
+        android:textColor="#AF933F"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gamesst" />
+
+    <TextView
+        android:id="@+id/numzz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:text="    0   "
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/gameswon"
+        app:layout_constraintTop_toTopOf="@id/gameswon" />
+
+    <TextView
+        android:layout_marginStart="5sp"
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Time"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/gameswon"
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/jakartasans"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/besttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/jakartasans"
+        android:text="Best Time"
+        android:textColor="#AF933F"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+    <TextView
+        android:id="@+id/numzzz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="4dp"
+        android:text="    0   "
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/besttime"
+        app:layout_constraintTop_toTopOf="@id/besttime" />
+
+    <TextView
+        android:id="@+id/averagetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/jakartasans"
+        android:text="Average Time"
+        android:textColor="#AF933F"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/besttime" />
+
+    <TextView
+        android:id="@+id/numzzzz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="4dp"
+        android:text="    0   "
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/averagetime"
+        app:layout_constraintTop_toTopOf="@id/averagetime" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ng"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/roundbtn"
+        android:fontFamily="@font/jakartasans"
+        android:text="New Game"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/averagetime"
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

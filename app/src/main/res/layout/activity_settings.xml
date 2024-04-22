@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+<TextView
+    android:id="@+id/aaaa"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Settings"
+    android:textSize="40sp"
+    android:fontFamily="@font/jakartasans"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="2sp"
+    android:layout_marginStart="15sp"
+    android:textColor="#000"
+    />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="noads"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/red"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:id="@+id/bbbb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:fontFamily="@font/jakartasans"
+        android:text="NO ADS"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_marginRight="60sp"
+        app:layout_constraintTop_toBottomOf="@+id/aaaa" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginEnd="15sp"
+
+        android:id="@+id/cccc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bbbb"
+        android:text="How to play"
+        android:textSize="12sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginStart="15sp"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        android:layout_marginTop="3sp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="stat"
+        android:layout_marginEnd="15sp"
+
+        android:id="@+id/dddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cccc"
+        android:text="Statistics"
+        android:textSize="12sp"
+        android:layout_marginStart="15sp"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        android:layout_marginTop="3sp"/>
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginEnd="15sp"
+
+        android:id="@+id/eeee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dddd"
+        android:text="Game modes"
+        android:textSize="12sp"
+        android:layout_marginStart="15sp"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        android:layout_marginTop="3sp"/>
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginEnd="15sp"
+
+        android:id="@+id/ffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eeee"
+        android:text="Vibration"
+        android:textSize="12sp"
+        android:layout_marginStart="15sp"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        android:layout_marginTop="3sp"/>
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginEnd="15sp"
+
+        android:id="@+id/gggg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ffff"
+        android:text="Long touch sound"
+        android:textSize="12sp"
+        android:layout_marginStart="15sp"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        android:layout_marginTop="3sp"/>
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginEnd="15sp"
+
+        android:id="@+id/hhhh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gggg"
+        android:text="Notifications"
+        android:textSize="12sp"
+        android:layout_marginStart="15sp"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        android:layout_marginTop="3sp"/>
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginEnd="15sp"
+
+        android:id="@+id/iiii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hhhh"
+        android:text="Full Screen mode"
+        android:textSize="12sp"
+        android:layout_marginStart="15sp"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        android:layout_marginTop="3sp"/>
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginEnd="15sp"
+
+        android:id="@+id/jjjj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iiii"
+        android:text="size"
+        android:textSize="12sp"
+        android:layout_marginStart="15sp"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        android:layout_marginTop="3sp"/>
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginEnd="15sp"
+
+        android:id="@+id/kkkk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jjjj"
+        android:text="Flag Type"
+        android:textSize="12sp"
+        android:layout_marginStart="15sp"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        android:layout_marginTop="3sp"/>
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginEnd="15sp"
+
+        android:id="@+id/llll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kkkk"
+        android:text="Difficulty"
+        android:textSize="12sp"
+        android:layout_marginStart="15sp"
+        android:textColor="#000"
+        android:fontFamily="@font/jakartasans"
+        android:layout_marginTop="3sp"/>
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:onClick="homset"
+        android:id="@+id/hom"
+        android:layout_width="72sp"
+        android:layout_height="53sp"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="30sp"
+        android:src="@drawable/homeblack"
+        app:layout_constraintStart_toStartOf="@id/dddd"
+        app:layout_constraintTop_toBottomOf="@id/llll"
+
+        />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:onClick="ldrset"
+        android:id="@+id/ldr"
+        android:layout_width="72sp"
+        android:layout_height="53sp"
+        android:src="@drawable/baseline_leaderboard_24"
+        app:layout_constraintTop_toBottomOf="@id/llll"
+        android:layout_marginTop="30sp"
+        app:layout_constraintStart_toEndOf="@id/hom"
+        android:layout_marginStart="20sp"
+
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:layout_width="72sp"
+        android:layout_height="53sp"
+        android:src="@drawable/settingred"
+
+
+        app:layout_constraintTop_toBottomOf="@id/llll"
+        android:layout_marginTop="30sp"
+        app:layout_constraintStart_toEndOf="@id/ldr"
+        tools:layout_editor_absoluteX="296dp"
+        tools:layout_editor_absoluteY="630dp"
+        android:layout_marginStart="20sp"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

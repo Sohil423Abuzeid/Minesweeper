@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Minesweeper" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Minesweeper" parent="Base.Theme.Minesweeper" />
+    <item name="ff" type="font">@font/jakartasans</item>
+    <style name="Button.red" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@android:color/holo_red_dark</item>
+
+    </style>
+
+
+</resources>
