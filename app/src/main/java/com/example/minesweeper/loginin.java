@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -26,7 +27,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class loginin extends AppCompatActivity {
-    TextInputEditText lemail,lname,lpassoword;
+    EditText lemail,lname,lpassoword;
     Button log ;
     FirebaseAuth luth;
     ProgressBar lpar;
@@ -52,7 +53,7 @@ public class loginin extends AppCompatActivity {
         log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                lpar.setVisibility(view.VISIBLE);
+                lpar.setVisibility(View.VISIBLE);
                 String email, pass, name;
                 email = String.valueOf(lemail.getText());
                 name = String.valueOf(lname.getText());
@@ -73,13 +74,13 @@ public class loginin extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     lpar.setVisibility(View.GONE);
-                                    Toast.makeText(EmailPasswordActivity.this, "Authentication failed.",
+                                    Toast.makeText(loginin.this, "Authentication failed.",
                                             Toast.LENGTH_SHORT).show();
                                     Intent login_intent = new Intent(loginin.this ,MainActivity.class);
                                     startActivity(login_intent);
                                    //FirebaseUser user = luth.getCurrentUser();
                                 } else {
-                                    Toast.makeText(EmailPasswordActivity.this, "Authentication failed.",
+                                    Toast.makeText(loginin.this, "Authentication failed.",
                                             Toast.LENGTH_SHORT).show();
                                 }
                             }

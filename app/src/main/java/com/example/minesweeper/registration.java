@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -21,7 +23,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class registration extends AppCompatActivity {
-    TextInputEditText eemail,ename,epassoword;
+    EditText eemail,ename,epassoword;
     Button reg ;
 
     FirebaseAuth uth;
@@ -40,10 +42,10 @@ public class registration extends AppCompatActivity {
             epassoword= findViewById(R.id.regpass);
             par = findViewById(R.id.parreg);
             reg = findViewById(R.id.regbutton);
-            reg.setOnClickListener(new view.onclicklister() {
+            reg.setOnClickListener(new  View.OnClickListener() {
                 @Override
-                public void onclick(View view) {
-                    par.setVisibility(view.VISIBLE);
+                public void onClick(View view) { // Change onclick to onClick
+                    par.setVisibility(View.VISIBLE); // Change view.VISIBLE to View.VISIBLE
                     String email, pass, name;
                     email = String.valueOf(eemail.getText());
                     name = String.valueOf(ename.getText());
@@ -65,7 +67,7 @@ public class registration extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
-                                        par.setVisibility(view.GONE);
+                                        par.setVisibility(View.GONE); // Change view.GONE to View.GONE
                                         Toast.makeText(registration.this, "Done",
                                                 Toast.LENGTH_SHORT).show();
                                         Intent login_intent = new Intent(registration.this ,loginin.class);
@@ -77,7 +79,6 @@ public class registration extends AppCompatActivity {
                                 }
                             });
                 }
-
             });
             return insets;
 
