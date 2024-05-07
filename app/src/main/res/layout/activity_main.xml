@@ -109,4 +109,14 @@ android:background="@drawable/roundbtn"
         tools:layout_editor_absoluteY="630dp"
         android:layout_marginStart="20sp"/>
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:onClick="login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/baseline_settings_24"
+        tools:layout_editor_absoluteX="371dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
